@@ -1,0 +1,117 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) Launch Hello",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/prog-hello",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "preLaunchTask": "build-debug",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "(gdb) Attach Hello",
+            "type": "cppdbg",
+            "request": "attach",
+            "program": "${workspaceRoot}/prog-hello",
+            "processId": "${command:pickProcess}",
+            "MIMode": "gdb"
+        },
+        {
+            "name": "(gdb) Launch Pi",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/prog-pi",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "preLaunchTask": "build-debug",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "(gdb) Attach Pi",
+            "type": "cppdbg",
+            "request": "attach",
+            "program": "${workspaceRoot}/prog-pi",
+            "processId": "${command:pickProcess}",
+            "MIMode": "gdb"
+        },
+        {
+            "name": "(gdb) Launch Pi2",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/prog-pi2",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "preLaunchTask": "build-debug",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "(gdb) Attach Pi2",
+            "type": "cppdbg",
+            "request": "attach",
+            "program": "${workspaceRoot}/prog-pi2",
+            "processId": "${command:pickProcess}",
+            "MIMode": "gdb"
+        },
+        {
+            "name": "(gdb) Launch Pi3",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/prog-pi3",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "preLaunchTask": "build-debug",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "(gdb) Attach Pi3",
+            "type": "cppdbg",
+            "request": "attach",
+            "program": "${workspaceRoot}/prog-pi3",
+            "processId": "${command:pickProcess}",
+            "MIMode": "gdb"
+        }
+    ]
+}
